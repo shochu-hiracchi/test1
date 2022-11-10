@@ -1,0 +1,113 @@
+@charset "utf-8";
+*{
+    font-family: 'Noto Sans JP';
+}
+
+html {
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    letter-spacing:0.5px;
+    line-height: 50px;
+    text-align: center;
+}
+
+header {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 50px;
+    background-color: #fff;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.1));
+}
+
+body{
+background-color: #fff;
+height: 100vh;
+
+}
+
+#search-sort{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 5% 0;
+}
+
+#proList{
+    margin-top: 2vw;
+}
+
+.proList_block{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.proList_element{
+    position: relative;
+    width: 33vw;
+    height: 33vw;
+    text-align: center;
+    display: flex;
+    justify-content: center; /*左右中央揃え*/
+    align-items: center;     /*上下中央揃え*/
+}
+.proList_element_clip{
+    position:absolute;
+    top: 0;
+    right: 0;
+    max-width: 15%;
+    max-height: 15%;
+
+}
+.proList_element_image{
+    max-width:100%;
+    max-height:100%;
+}
+.proList_element_proName{
+    position: absolute;
+    bottom: 0;
+    padding: 3% 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+.stockCnt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15%;
+    width: 15%;
+    padding: 10%;
+    background-color: rgba(115, 172, 230,0.8);
+    border-radius: 100%;
+}
+
+.stockCnt span{
+    color: #fff;
+    font-family: 'Montserrat';
+}
+.add_product div{
+    border-radius: 100%;
+    height: 40%;
+    width: 40%;
+    background-color:#73A6E6;
+    display: flex;
+    justify-content: center; /*左右中央揃え*/
+    align-items: center;     /*上下中央揃え*/
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.1));
+
+}
+.add_product img{
+    width: 10vw;
+    height: 10vw;
+    top: 0;
+    bottom: 0;
+}
